@@ -1,3 +1,5 @@
+# A simple calculator
+
 first_number = int(input("First Number: "))
 second_number = int(input("Second Number: "))
 operator = input("Operation: ")
