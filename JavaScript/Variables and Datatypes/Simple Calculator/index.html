@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator-frame">
+        <input type="text" id="display" disabled>
+        <div class="buttons">
+            <button onclick="flashElement(this); clearAll()" class="misc-button">C</button>
+            <button onclick="flashElement(this); plusMinusOperation()" class="misc-button">+/-</button>
+            <button onclick="flashElement(this); addToDisplay('%')" class="misc-button">%</button>
+            <button onclick="addToDisplay('/')" class="operation-button" id="divide-operator">/</button>
+            <br>
+            <button onclick="flashElement(this); addToDisplay(7)" class="num-button">7</button>
+            <button onclick="flashElement(this); addToDisplay(8)" class="num-button">8</button>
+            <button onclick="flashElement(this); addToDisplay(9)" class="num-button">9</button>
+            <button onclick="addToDisplay('*')" class="operation-button" id="multiply-operator">X</button>
+            <br>
+            <button onclick="flashElement(this); addToDisplay(4)" class="num-button">4</button>
+            <button onclick="flashElement(this); addToDisplay(5)" class="num-button">5</button>
+            <button onclick="flashElement(this); addToDisplay(6)" class="num-button">6</button>
+            <button onclick="addToDisplay('-')" class="operation-button" id="minus-operator">-</button>
+            <br>
+            <button onclick="flashElement(this); addToDisplay(1)" class="num-button">1</button>
+            <button onclick="flashElement(this); addToDisplay(2)" class="num-button">2</button>
+            <button onclick="flashElement(this); addToDisplay(3)" class="num-button">3</button>
+            <button onclick="addToDisplay('+')" class="operation-button" id="plus-operator">+</button>
+            <br>
+            <button onclick="flashElement(this); addToDisplay(0)" class="num-button">0</button>
+            <button onclick="flashElement(this); addToDisplay('.')" class="num-button">.</button>
+            <button onclick="flashElement(this); prevAnswerFunc()" class="num-button">Ans</button>
+            <button onclick="flashElement(this); calculate()" class="operation-button">=</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Roboto+Slab&display=swap');
+
+
+* {
+    font-family: 'Roboto Slab', serif;
+}
+
+body {
+    background-color: black;
+}
+
+.calculator-frame {
+    margin-top: 100px;
+    margin-left: 300px;
+}
+
+#display {
+    text-align: right;
+    font-size: 50px;
+    color: white;
+    width: 325px;
+    height: 75px;
+    border: none;
+    background-color: black;
+}
+
+.buttons button {
+    font-size: 30px;
+    width: 75px;
+    height: 75px;
+    border: none;
+    border-radius: 100%;
+    margin: 3px;
+    transition: all 0.5s;
+}
+
+.misc-button {
+    background-color:lightgray;
+    color: black;
+}
+
+.num-button {
+    background-color: rgb(87, 85, 85);
+    color: white;
+}
+
+.operation-button {
+    background-color:orange;
+    color: white;
+}

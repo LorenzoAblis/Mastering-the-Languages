@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inventory System</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <button onclick="showAddProductForm()" class="button" id="show-add-product-form-button">Add a Product</button>
+    </header>
+
+    <section>
+        <div class="form-container" id="add-product-form-container">
+            <div class="form" id="add-product-form">
+                <h1 class="form-title">Add a Product</h1>
+                <h2 class="missing-field-warning" id="add-product-missing-field-warning">One or more fields are missing</h2>
+                <input type="text" class="input" id="add-product-name-input" name="add-product-name-input" placeholder="Name"><br>
+                <input type="number" class="input" id="add-product-quantity-input" name="add-product-quantity-input" placeholder="Quantity"><br>
+                <input type="number" class="input" id="add-product-price-input" name="add-product-price-input" placeholder="Price"><br>
+                <button onclick="addProduct()" class="button" id="add-product-button">Add Item to Inventory</button>
+                <button onclick="clearForms()" class="button" id="cancel-add-product-button">Cancel</button>
+            </div>
+        </div>
+        <div class="form-container" id="edit-product-form-container">
+            <div class="form" id="edit-product-form">
+                <h1 class="form-title">Edit Product</h1>
+                <h2 class="missing-field-warning" id="edit-product-missing-field-warning">One or more fields are missing</h2>
+                <input type="text" class="input" id="edit-product-name-input" name="edit-product-name-input" placeholder="Name"><br>
+                <input type="number" class="input" id="edit-product-quantity-input" name="edit-product-quantity-input" placeholder="Quantity"><br>
+                <input type="number" class="input" id="edit-product-price-input" name="edit-product-price-input" placeholder="Price"><br>
+                <button onclick="clearForms()" class="button" id="cancel-edit-product-button">Cancel</button>
+                <button onclick="saveEdittedProduct()" class="button" id="save-editted-product-button">Save</button>
+                <button onclick="deleteProduct()" class="button" id="delete-product-button">Delete</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="inventory-container"></div>
+</body>
+</html>
+
+
+
+
